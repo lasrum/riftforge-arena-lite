@@ -1,4 +1,15 @@
+name: Build WebGL
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WebGL
+          path: build/WebGL
