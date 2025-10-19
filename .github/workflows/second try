@@ -1,7 +1,4 @@
-This workflow graph cannot be shown
-A graph will be generated the next time this workflow is run.
-
-Annotations
-1 error
-Error
-No event triggers defined in `on`
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
